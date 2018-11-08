@@ -21,7 +21,7 @@ banking.</p>
 <p>The infrastructure shown is based on spring cloud and spring boot in order to implement 
 commons patterns based on distributed system.</p>
 
-![infraestructure](https://github.com/anzen/bne_microservices_archetypes/blob/master/infraestructure.png)
+![infraestructure](https://github.com/mikecoronel/ecosystem-microservices/blob/master/infraestructure.png)
 
 <p>Gray modules are not found in the present architecture, due to lack of definition of the project, but if it is 
 necessary those modules can be included in a future the work to do that is minimal.</p>
