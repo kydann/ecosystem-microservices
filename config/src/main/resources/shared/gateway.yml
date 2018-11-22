@@ -21,3 +21,6 @@ zuul:
       path: /empty/**
       serviceId: empty
     
+    citi:
+        path: /citi/**
+        serviceId: citi
