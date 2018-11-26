@@ -1,6 +1,6 @@
 <h1>BANCA DEL FUTURO</h1>
 
-<h2>Ecosystem and archetype for Electronic Banking migration project</h2>
+<h2>Ecosystem and archetype for Electronic Banking migration project.</h2>
 
 <p>This is a general template archetype and generic infraestructure for Electronic Banking developers based on a 
 <a href="https://martinfowler.com/microservices/"> Microservice Architecture Pattern</a> 
