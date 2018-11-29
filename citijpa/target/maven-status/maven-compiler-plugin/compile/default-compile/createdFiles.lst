@@ -1,0 +1,12 @@
+com/citibanamex/bne/jpa/repo.class
+com/citibanamex/bne/services/ApiService.class
+com/citibanamex/bne/api/Controller.class
+com/citibanamex/bne/connector/ConnectorService.class
+com/citibanamex/bne/ApiDomainApplication.class
+com/citibanamex/bne/services/ProxyService.class
+com/citibanamex/bne/jpa/servImpl.class
+com/citibanamex/bne/jpa/usuario.class
+com/citibanamex/bne/connector/Connector.class
+com/citibanamex/bne/implementation/ProxyServiceImp.class
+com/citibanamex/bne/implementation/ApiServiceImp.class
+com/citibanamex/bne/jpa/serv.class

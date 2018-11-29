@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hystrix
+  config:
+    name: hystrix
+  cloud:
+    config:
+      uri: http://config:8888
+      fail-fast: true
+      password: ${CONFIG_SERVICE_PASSWORD}
+      username: user
+server:
+  port: 7799

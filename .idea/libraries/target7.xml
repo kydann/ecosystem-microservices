@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="target7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/citi/target/citi-1.0.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/citi/target/citi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

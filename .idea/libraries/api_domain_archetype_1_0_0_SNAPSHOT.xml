@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="api-domain-archetype-1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/archetype/target/api-domain-archetype-1.0.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

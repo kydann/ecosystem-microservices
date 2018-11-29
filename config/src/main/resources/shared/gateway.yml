@@ -24,3 +24,11 @@ zuul:
     citi:
         path: /citi/**
         serviceId: citi
+
+    citijpa:
+        path: /citijpa/**
+        serviceId: citijpa
+
+    hystrix:
+        path: /hystrix/**
+        serviceId: hystrix

@@ -1,7 +1,10 @@
 package com.citibanamex.bne.api;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-
+import org.springframework.web.bind.annotation.PathVariable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.citibanamex.bne.jdbcclient.model.SqlStatementRequest;
 import com.citibanamex.bne.jdbcclient.model.SqlStatementResponse;
 import com.citibanamex.bne.services.ApiService;
+import com.citibanamex.bne.domain.employe;
 
 @RestController
 @RequestMapping("/v1")
@@ -49,4 +53,40 @@ public class Controller {
 		
 		return new ResponseEntity<>(output, HttpStatus.OK);
 	}
+	
+	private static Map<String, List<employe>> schooDB = new HashMap<String, List<employe>>();
+
+	static {
+		schooDB = new HashMap<String, List<employe>>();
+
+		List<employe> lst = new ArrayList<employe>();
+		employe std = new employe("Chris", "Class");
+		lst.add(std);
+		std = new employe("Evelin", "Class");
+		lst.add(std);
+		schooDB.put("citiBank", lst);
+
+		lst = new ArrayList<employe>();
+		std = new employe("Diana", "Class");
+		lst.add(std);
+		std = new employe("Erick", "Class");
+		lst.add(std);
+
+		schooDB.put("citi", lst);
+
+	}
+
+	@RequestMapping(value = "/getEmployeeDetailsForCiti/{employee}", method = RequestMethod.GET)
+	public List<employe> getEmployees(@PathVariable String employee) {
+		System.out.println("Getting Student details for " + employee);
+
+		List<employe> citiList = schooDB.get(employee);
+		if (citiList == null) {
+			citiList = new ArrayList<employe>();
+			employe std = new employe("Not Found", "N/A");
+			citiList.add(std);
+		}
+		return citiList;
+	}
+	
 }
